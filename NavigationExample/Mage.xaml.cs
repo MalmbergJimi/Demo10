@@ -13,29 +13,29 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace NavigationExample
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Mage : Page
     {
-        public MainPage()
+        public Mage()
         {
             this.InitializeComponent();
         }
 
-        // SIIRRYTÄÄN PlayButtonia painamalla GamePagelle
-        private void PlayButton_Click(object sender, RoutedEventArgs e)
+        private void Left_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(GamePage));
+            string liiku = "541,292,0,0";
+            image.Margin = liiku;
         }
 
-        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        private void Right_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Ohjeet));
+
         }
     }
 }

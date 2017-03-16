@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="image" Source="Assets/etusivu.png"  HorizontalAlignment="Left" Height="700" Margin="94,0,-84,0" VerticalAlignment="Top" Width="1270" />
+        <Button x:Name="PlayButton" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="100" FontWeight="Black"
+                Click="PlayButton_Click" Margin="434,338,446,243" Height="139" Width="400"/>
+        <Button x:Name="HelpButton" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="100" FontWeight="Black"
+                Click="HelpButton_Click" Margin="503,522,505,103" Height="95" Width="272"/>
 
     </Grid>
 </Page>
